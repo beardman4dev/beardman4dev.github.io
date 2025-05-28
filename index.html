@@ -12,6 +12,14 @@
 <body>
 <div class="main-title">
     <h1>Hola!</h1>
+    // make button to change the title
+    <button id="change-title-button">Change Title</button>
 </div>
+
+<script>
+    document.getElementById('change-title-button').addEventListener('click', function() {
+        document.querySelector('.main-title h1').textContent = 'Title Changed!';
+    });
+</script>
 </body>
 </html>
